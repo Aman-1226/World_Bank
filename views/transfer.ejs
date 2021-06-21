@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="STYLE.css">
+    <title>WORLD BANK | MONEY TRANSFER</title>
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="image/LOGO.png" alt="Loading Image">
+            <h4>WORLD BANK</h4>
+        </div>
+        <ul>
+            <li class="items"><a href="Project.html">Home</a></li>
+            <li class="items"><a href="/customers">Customers</a></li>
+            <li class="items"><a href="about.html">About Us</a></li>
+            <li class="items"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <nav class="box">
+        <p><b>Account Holder Name: </b><%= senderDetails.name %></p><br>
+        <p><b>Account Number: </b><%= senderDetails._id %></p><br>
+        <p><b>Account Balance: </b><%= senderDetails.balance %></p><br>
+
+        <form action="/finalTransfer" method="POST">
+            <input type="number" class="btn-2" name="amount" id="amount" placeholder="Enter the amount" required-min="0"><br>
+            <label for="det" class="btn-2"></label>
+            <select name="reciever" id="det">
+                <option value="" >Select Receiver's Name</option>
+                <% recieverList.forEach(function(element){ %>
+                    <option value=<%= element._id %> ><%= element.name %></option>
+                <% }); %>
+            </select><br>
+            <button class="btn" type="submit" value=<%= senderDetails._id %> name="senderId">Transfer</button><br>
+        </form>
+    </nav>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,516 @@
+/* Resret */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* NAVIGATION BAR */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    background-color: black;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+/* LOGO */
+
+#logo{
+    margin: 2px 3px;
+}
+
+#logo img{
+    height: 80px;
+    margin: 2px 19px;
+}
+
+#logo h4{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* LIST ITEMS */
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    padding: 35px 13px;
+    margin: -8px 21px;
+    font-size: 19px;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    padding: 3px 6px;
+    margin: 2px 5px;
+    border-radius: 30px;
+    color: white;
+}
+
+#navbar ul li a:hover{
+    background-color: white;
+    color:black;
+}
+
+/* HOME */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 88px 55px;
+    height: 50px;
+    color: white;
+}
+
+#home::before{
+    background: url('image/bg1.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#box1::before{
+    background-color: #282831;
+    content: "";
+    position: absolute;
+    height: 55%;
+    width: 51%;
+    top: 14%;
+    left: 0%;
+    z-index: -1;
+    opacity: 0.8;
+    border-bottom-right-radius: 350px;
+}
+
+#home h1{
+    font-size: 2.4rem;
+}
+
+#home h2{
+    font-size: 2rem;
+    padding: 10px 0px;
+}
+
+#home h6{
+    font-size: 1rem;
+    padding: 5px 0px;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    padding: 5px 24px;
+    margin: 18px 143px;
+    border-color: white;
+    border-radius: 23px;
+    border-width: 4px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+.btn a:hover{
+    color: black;
+}
+
+/* ABOUT US */
+
+#about{
+    display: flex;
+    margin: 34px;
+    flex-direction: column;
+}
+
+#about::before{
+    background: url('image/bg2.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    height: 147%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#pic-1::before{
+    background-color: rgba(17, 15, 15, 0.74);
+    content: "";
+    position: absolute;
+    height: 39%;
+    width: 60%;
+    top: 21%;
+    left: -4%;
+    padding: 0px 203px;
+    margin: -3px 47px;
+    z-index: -1;
+    opacity: 1.2;
+    border-bottom-right-radius: 150px;
+    border-top-right-radius: 150px;
+}
+
+#pic-2::before{
+    background-color: rgba(17, 15, 15, 0.74);
+    content: "";
+    position: absolute;
+    height: 35%;
+    width: 94%;
+    top: 62%;
+    right: -2%;
+    padding: 10px 18px;
+    margin: 2px 32px; 
+    z-index: -1;
+    opacity: 1.2;
+    border-bottom-left-radius: 150px;
+    border-top-left-radius: 150px;
+}
+
+#pic-3::before{
+    background-color: rgba(17, 15, 15, 0.74);
+    content: "";
+    position: absolute;
+    height: 38%;
+    width: 67%;
+    top: 103%;
+    left: -4%;
+    padding: 0px 203px;
+    margin: -3px 47px;
+    z-index: -1;
+    opacity: 1.2;
+    border-bottom-right-radius: 150px;
+    border-top-right-radius: 150px;
+}
+
+#pic-1 img{
+    float: left;
+    height: 245px;
+    width: 352px;
+    margin: auto;
+    padding: 28px 22px;
+}
+
+#pic-2 img{
+    float: right;
+    height: 245px;
+    width: 329px;
+    margin: auto;;
+    padding: 42px 22px;
+}
+
+#pic-3 img{
+    float: left;
+    height: 245px;
+    width: 352px;
+    margin: auto;
+    padding: 28px 22px;
+}
+
+#about h1{
+    display: flex;
+    color: white;
+    text-shadow: 4px 5px blue;
+    font-size: 3rem;
+    margin: 13px 254px;
+    padding: 6px 18px;
+}
+
+#about h6{
+    display: flex;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    margin: -13px 254px;
+    padding: 6px 19px;
+}
+
+#about p{
+    display: flex;
+    color: white;
+    font-size: 1.6rem;
+    margin: 2px 263px;
+    padding: 7px 10px;
+}
+
+/* CONTACT US */
+
+#contact::before{
+    background: url('image/bg3.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#contact h1{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    font-size: 5rem;
+}
+
+#contact ul{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+}
+
+#contact ul a{
+    display: block;
+    padding: 24px 23px;
+    margin: 2px 24px;
+    border-radius: 50%;
+    background-color: rgb(215 190 190);
+    text-align: center;
+    box-shadow: 3px 6px 6px black;
+}
+
+#contact ul a:hover{
+    transform: translate(0,-10px);
+    background-color: rgb(221, 112, 112);
+}
+
+#contact ul a .fab{
+    font-size: 3rem;
+    color: black;
+}
+
+#contact ul a .fab:hover{
+    color: rgb(17, 17, 153);
+}
+
+/* INDEX */
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container::before{
+    background: url('/image/bg5.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+table, th, td{
+    border-bottom: 2px solid red;
+    border-collapse: collapse;
+    padding: 7px 45px;
+    margin: 8px 2px;
+    text-align: center;
+} 
+
+table::before{
+    background: url('/image/bg4.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    height: 77%;
+    width: 57%;
+    top: 17%;
+    left: 21.5%;
+    z-index: -1;
+    opacity: 0.9;
+    border-radius: 14px;
+}
+
+th{
+    padding: 18px 33px;
+    font-size: 2rem;
+    text-decoration: underline;
+    color: white;
+}
+
+td{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.btn-1 {     
+   border-radius: 20px;
+   background-color: white;
+   color: black;
+   padding: 5px 10px;
+   margin: 1px 3px;
+   font-size: 1rem;
+   cursor: pointer;
+}
+
+.btn-1:hover{
+    background-color: rgb(214, 74, 74);
+    border-color: white; 
+}
+
+/* DETAILS */
+
+.box{
+    position: absolute;
+    top: 28%;
+    left: 32%;
+}
+
+.box::before{
+    background: url('/image/bg4.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    height: 117%;
+    width: 112%;
+    top: -8%;
+    left: -8%;
+    z-index: -1;
+    opacity: 0.9;
+    border-radius: 14px;
+}
+
+.box h3{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2.5rem;
+    color: white;
+    margin: 3px 4px;
+}
+
+.box p{
+    font-size: 1.5rem;
+    color: white;
+    margin: 10px 2px;
+}
+
+/* TRANSFER */
+
+#det{
+    padding: 6px 3px;
+    margin: 7px -14px;
+    border-radius: 12px;
+    font-size: 1rem;
+}
+
+.btn-2{
+    padding: 6px 3px;
+    margin: 7px 11px;
+    border-radius: 12px;
+    font-size: 1rem;
+}
+
+/* SUCCESS */
+
+.box-1{
+    position: absolute;
+    top: 47%;
+    left: 45%;
+}
+
+.box-1::before{
+    background-color: rgb(231, 130, 130);
+    content: "";
+    position: absolute;
+    height: 469%;
+    width: 130%;
+    top: -260%;
+    left: -37%;
+    z-index: -1;
+    opacity: 0.9;
+    border-radius: 14px;
+}
+
+.box-1 i{
+    position: absolute;
+    top: -206%;
+    left: 3%;
+    text-align: center;
+    background-color: white;
+    height: 184px;
+    width: 189px;
+    border-radius: 200px;
+    margin: -24px auto;
+    font-size: 135px;
+}
+
+.box-1 p{
+    position: relative;
+    left: -20%;
+    font-size: 3rem;
+}
+
+/* box-2 */
+
+.box-2{
+    position: absolute;
+    top: 47%;
+    left: 45%;
+}
+
+.box-2::before{
+    background-color: rgb(231, 130, 130);
+    content: "";
+    position: absolute;
+    height: 554%;
+    width: 130%;
+    top: -366%;
+    left: -46%;
+    z-index: -1;
+    opacity: 0.9;
+    border-radius: 14px;
+}
+
+.box-2 i{
+    position: absolute;
+    top: -287%;
+    left: 3%;
+    text-align: center;
+    background-color: white;
+    height: 184px;
+    width: 189px;
+    border-radius: 200px;
+    margin: -24px auto;
+    font-size: 174px;
+    color: red;
+}
+
+.box-2 p{
+    position: relative;
+    left: -30%;
+    font-size: 2rem;
+}

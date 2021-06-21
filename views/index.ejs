@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="STYLE.css">
+    <title>WORLD BANK | MONEY TRANSFER</title>
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="image/LOGO.png" alt="Load Image">
+            <h4>WORLD BANK</h4>
+        </div>
+        <ul>
+            <li class="items"><a href="Project.html">Home</a></li>
+            <li class="items"><a href="/customers">Customers</a></li>
+            <li class="items"><a href="about.html">About Us</a></li>
+            <li class="items"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <table>
+        <tr>
+            <th class="head">Name</th>
+            <th class="head">E-Mail</th>
+            <th class="head2">View Details</th>
+        </tr>
+        <% customerList.forEach(function(element){ %>
+            <tr>
+                <td class="data"><%= element.name %></td>
+                <td class="data"><%= element.email %></td>
+                <td class="data">
+                <form action="/" method="POST">
+                    <button type="submit" class="btn-1" name="viewDetails" value=<%= element._id %> >View Details</button>
+                </form>
+            </td>
+            </tr>
+        <% }); %>
+        </table>
+    </div>
+</body>
+
+</html>

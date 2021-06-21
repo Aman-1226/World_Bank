@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="STYLE.css">
+    <title>WORLD BANK | MONEY TRANSFER</title>
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="image/LOGO.png" alt="Loading Image">
+            <h4>WORLD BANK</h4>
+        </div>
+        <ul>
+            <li class="items"><a href="Project.html">Home</a></li>
+            <li class="items"><a href="/customers">Customers</a></li>
+            <li class="items"><a href="about.html">About Us</a></li>
+            <li class="items"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <nav class="box">
+        <h3 id="header">CUSTOMER &nbspDETAILS</h3>
+        <p><b>Name: </b><%= customerDetail.name %></p><br>
+        <p><b>Account Number: </b><%= customerDetail._id %></p><br>
+        <p><b>E-Mail: </b><%= customerDetail.email %></p><br>
+        <p><b>Balance: </b><%= customerDetail.balance %></p><br>
+        <form action="/transfer" method="POST">
+            <button type="submit" class="btn" name="transfer" value=<%= customerDetail._id %> >Transfer Money</button>
+        </form>
+    </nav>
+    </div>
+</body>
+
+</html>
